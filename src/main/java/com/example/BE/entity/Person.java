@@ -34,7 +34,4 @@ public class Person {
     @Column(name = "phone", nullable = false)
     private String phone;
 
-    @OneToMany(mappedBy = "person", cascade = CascadeType.ALL)
-    private List<Account> accounts;
-
 }
