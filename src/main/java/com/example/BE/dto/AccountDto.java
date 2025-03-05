@@ -1,8 +1,6 @@
 package com.example.BE.dto;
 
-import java.util.List;
-
-import com.example.BE.entity.Account;
+import com.example.BE.entity.Person;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -13,11 +11,10 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class PersonDto {
+public class AccountDto {
     private Long id;
-    private String name;
-    private String address;
-    private String dob;
-    private String phone;
+    private Person person;
+    private String username;
+    private String password;
 
 }
