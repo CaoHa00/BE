@@ -4,25 +4,23 @@ import com.example.BE.dto.PersonDto;
 import com.example.BE.entity.Person;
 
 public class PersonMapper {
-    public static PersonDto mapToPersonDto( Person person) {
+    public static PersonDto mapToPersonDto(Person person) {
         return new PersonDto(
-            person.getId(), 
-            person.getName(), 
-            person.getAddress(), 
-            person.getDob(),
-            person.getPhone()
-           
-            );
+                person.getId(),
+                person.getName(),
+                person.getAddress(),
+                person.getDob(),
+                person.getPhone(),
+                person.getAccount());
     }
 
     public static Person mapToPerson(PersonDto personDto) {
         return new Person(
-           personDto.getId(),
-           personDto.getName(),
-           personDto.getAddress(),
-           personDto.getDob(),
-           personDto.getPhone()
-           
-        );
+                personDto.getId(),
+                personDto.getName(),
+                personDto.getAddress(),
+                personDto.getDob(),
+                personDto.getPhone(),
+                personDto.getAccount());
     }
 }

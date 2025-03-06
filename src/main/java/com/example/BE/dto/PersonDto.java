@@ -19,5 +19,5 @@ public class PersonDto {
     private String address;
     private String dob;
     private String phone;
-
+    private Account account;
 }
